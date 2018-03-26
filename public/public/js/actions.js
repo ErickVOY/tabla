@@ -10,6 +10,18 @@ $( function () {
 		}
 	});
 
+	$('#clearElement').on('click', function () {
+		$('input[name="numeroAtomico"]').val('');
+		$('input[name="masaAtomica"]').val('');
+		$('input[name="energiaDeIonizacion"]').val('');
+		$('input[name="SimboloQuimico"]').val('');
+		$('input[name="nombre"]').val('');
+		$('input[name="grupo"]').val('');
+		$('input[name="electronegatividad"]').val('');
+		$('input[name="estadosDeOxidacion"]').val('');
+		$('input[name="TipoDeElemento"]').val('');
+	});
+
 	$('#regElement').on('click', function () {
 		var numeroAtomico = $('input[name="numeroAtomico"]').val();
 		var masaAtomica = $('input[name="masaAtomica"]').val();

@@ -129,6 +129,10 @@ header button {
 	background: rgba( 240, 240, 240, 0.2);
 }
 
+#form #clearElement:before {
+	content: "Borrar";
+}
+
 #form button {
 	width: 100px;
 	height: 30px;
