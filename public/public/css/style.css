@@ -1,10 +1,63 @@
+/* poppins-100 - latin */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 100;
+	src: url('../fonts/poppins-v5-latin-100.eot'); /* IE9 Compat Modes */
+	src: local('Poppins Thin'), local('Poppins-Thin'),
+		url('../fonts/poppins-v5-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/poppins-v5-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/poppins-v5-latin-100.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/poppins-v5-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/poppins-v5-latin-100.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-regular - latin */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/poppins-v5-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local('Poppins Regular'), local('Poppins-Regular'),
+		url('../fonts/poppins-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/poppins-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/poppins-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/poppins-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/poppins-v5-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-300 - latin */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/poppins-v5-latin-300.eot'); /* IE9 Compat Modes */
+	src: local('Poppins Light'), local('Poppins-Light'),
+		url('../fonts/poppins-v5-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/poppins-v5-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/poppins-v5-latin-300.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/poppins-v5-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/poppins-v5-latin-300.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-600 - latin */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/poppins-v5-latin-600.eot'); /* IE9 Compat Modes */
+	src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
+		url('../fonts/poppins-v5-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/poppins-v5-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/poppins-v5-latin-600.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/poppins-v5-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/poppins-v5-latin-600.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+
 * {
-	font-family: "Arial";
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
 	margin: 0 0;
-	background: url('../img/back2b.jpg');
+	background: url('../img/back1b.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -12,9 +65,21 @@ body {
 header {
 	width: 100%;
 	height: 60px;
-	background: url('../img/back2b.jpg');
+	background: url('../img/back1b.jpg');
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+header #title {
+	font-size: 22px;
+	font-weight: 300;
+	color: rgb( 244, 244, 244);
+}
+
+header button {
+	float: right;
+	border: solid 0px;
+	background: rgba( 33, 33, 33, 0.4);
 }
 
 #space {
@@ -23,7 +88,7 @@ header {
 	position: absolute;
 	width: calc(100% - 60px);
 	height: calc(100% - 60px);
-	background: url('../img/back2.jpg');
+	background: url('../img/back1.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -32,10 +97,12 @@ header {
 	width: 15%;
 	height: 30px;
 	float: left;
+	overflow: hidden;
 	margin-top: 30px;
 	margin-left: 3.5%;
 	border: solid 0px;
-	background: url('../img/back2b.jpg');
+	border-radius: 4px 4px;
+	background: url('../img/back1b.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -45,10 +112,26 @@ header {
 	height: 30px;
 	border: solid 0px;
 	text-align: center;
+	margin: 0 0;
+	padding: 0px 0px;
+	font-size: 14px;
+	color: rgb( 225, 225, 225);
 	background: rgba( 240, 240, 240, 0.2);
 }
 
 #form button {
 	display: block;
 	margin: auto auto;
+}
+
+::placeholder { 
+	color: rgb( 225, 225, 225);
+}
+
+:-ms-input-placeholder { 
+	color: rgb( 225, 225, 225);
+}
+
+::-ms-input-placeholder { 
+	color: rgb( 255, 255, 255);
 }
