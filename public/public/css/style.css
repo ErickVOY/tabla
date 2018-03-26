@@ -99,6 +99,10 @@ header button {
 	background-attachment: fixed;
 }
 
+#form {
+	display: none;
+}
+
 #form div {
 	width: 15%;
 	height: 30px;

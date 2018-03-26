@@ -1,4 +1,9 @@
 $( function () {
+
+	$('#openRegElements').on('click', function () {
+		$('#form').css('display','block');
+	});
+
 	$('#regElement').on('click', function () {
 		var numeroAtomico = $('input[name="numeroAtomico"]').val();
 		var masaAtomica = $('input[name="masaAtomica"]').val();
@@ -19,7 +24,7 @@ $( function () {
 			grupo == "" ||
 			electronegatividad == "" ||
 			estadosDeOxidacion == "" ||
-			tipoDeElemento
+			tipoDeElemento == ""
 		) {
 			alert("Debes llenar todos los campos");
 		} else {
