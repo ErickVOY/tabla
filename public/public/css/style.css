@@ -27,3 +27,15 @@ header {
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+#form input[type="text"] {
+	width: 15%;
+	height: 30px;
+	margin-top: 30px;
+	margin-left: 3.5%;
+	border: solid 0px;
+	text-align: center;
+	background: url('../img/back2b.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
