@@ -10,3 +10,27 @@ var config = {
 firebase.initializeApp(config);
 
 var database = firebase.database();
+
+function writeUserData(
+	numeroAtomico, 
+	masaAtomica, 
+	energiaDeIonizacion, 
+	simboloQuimico,
+	nombre,
+	configuracionElectronica,
+	electronegatividad,
+	estadosDeOxidacion,
+	tipoDeElemento
+) {
+  firebase.database().ref('elementos/' + numeroAtomico).set({
+    numeroAtomico: numeroAtomico,
+    masaAtomica: masaAtomica,
+    energiaDeIonizacion: energiaDeIonizacion,
+    simboloQuimico: simboloQuimico,
+    nombre: nombre,
+    configuracionElectronica: configuracionElectronica,
+    electronegatividad: electronegatividad,
+    estadosDeOxidacion: estadosDeOxidacion,
+    tipoDeElemento:tipoDeElemento
+  });
+}
