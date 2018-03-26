@@ -4,7 +4,7 @@
 
 body {
 	margin: 0 0;
-	background: url('../img/back1b.jpg');
+	background: url('../img/back2b.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -12,7 +12,18 @@ body {
 header {
 	width: 100%;
 	height: 60px;
-	background: url('../img/back1b.jpg');
+	background: url('../img/back2b.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#space {
+	top: 30px;
+	left: 30px;
+	position: absolute;
+	width: calc(100% - 60px);
+	height: calc(100% - 60px);
+	background: url('../img/back2.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
