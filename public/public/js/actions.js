@@ -10,4 +10,15 @@ $( function () {
 		var estadosDeOxidacion = $('input[name="estadosDeOxidacion"]').val();
 		var TipoDeElemento = $('input[name="TipoDeElemento"]').val();
 	});
+	regElements(
+		numeroAtomico, 
+		masaAtomica, 
+		energiaDeIonizacion, 
+		simboloQuimico,
+		nombre,
+		configuracionElectronica,
+		electronegatividad,
+		estadosDeOxidacion,
+		tipoDeElemento
+	);
 });
