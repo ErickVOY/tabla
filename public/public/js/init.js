@@ -11,7 +11,7 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
-function RegElements(
+function regElements(
 	numeroAtomico, 
 	masaAtomica, 
 	energiaDeIonizacion, 
