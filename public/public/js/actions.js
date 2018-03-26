@@ -10,18 +10,32 @@ $( function () {
 		var estadosDeOxidacion = $('input[name="estadosDeOxidacion"]').val();
 		var tipoDeElemento = $('input[name="TipoDeElemento"]').val();
 
-		regElements(
-			numeroAtomico, 
-			masaAtomica, 
-			energiaDeIonizacion, 
-			simboloQuimico,
-			nombre,
-			grupo,
-			electronegatividad,
-			estadosDeOxidacion,
+		if (
+			numeroAtomico == "" ||
+			masaAtomica == "" ||
+			energiaDeIonizacion == "" ||
+			simboloQuimico == "" ||
+			nombre == "" ||
+			grupo == "" ||
+			electronegatividad == "" ||
+			estadosDeOxidacion == "" ||
 			tipoDeElemento
-		);
+		) {
+			alert("Debes llenar todos los campos");
+		} else {
+			regElements(
+				numeroAtomico, 
+				masaAtomica, 
+				energiaDeIonizacion, 
+				simboloQuimico,
+				nombre,
+				grupo,
+				electronegatividad,
+				estadosDeOxidacion,
+				tipoDeElemento
+			);
 
-		alert("Registrado");
+			alert("Registrado");
+		}
 	});
 });
