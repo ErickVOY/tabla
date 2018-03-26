@@ -1,41 +1,32 @@
-[debug] [2018-03-26T17:46:50.085Z] ----------------------------------------------------------------------
-[debug] [2018-03-26T17:46:50.085Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ErickVO\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only hosting
-[debug] [2018-03-26T17:46:50.085Z] CLI Version:   3.17.7
-[debug] [2018-03-26T17:46:50.085Z] Platform:      win32
-[debug] [2018-03-26T17:46:50.085Z] Node Version:  v8.10.0
-[debug] [2018-03-26T17:46:50.085Z] Time:          Mon Mar 26 2018 11:46:50 GMT-0600 (Hora estándar central (México))
-[debug] [2018-03-26T17:46:50.085Z] ----------------------------------------------------------------------
+[debug] [2018-03-26T21:29:36.011Z] ----------------------------------------------------------------------
+[debug] [2018-03-26T21:29:36.014Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only hosting
+[debug] [2018-03-26T21:29:36.014Z] CLI Version:   3.17.4
+[debug] [2018-03-26T21:29:36.014Z] Platform:      darwin
+[debug] [2018-03-26T21:29:36.014Z] Node Version:  v9.5.0
+[debug] [2018-03-26T21:29:36.015Z] Time:          Mon Mar 26 2018 15:29:36 GMT-0600 (CST)
+[debug] [2018-03-26T21:29:36.015Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-03-26T17:46:50.117Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-03-26T17:46:50.117Z] > authorizing via signed-in user
-[debug] [2018-03-26T17:46:50.132Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-03-26T17:46:50.132Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/dwGv4zpPRGuo3TmhDkXmd-SsKr8XSCcPb535IWMLT4VHwlaTO0-0gKcIeWM0itsq',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Mon Mar 26 2018 11:46:50 GMT-0600 (Hora estándar central (México))
-[debug] [2018-03-26T17:46:50.960Z] <<< HTTP RESPONSE 200
-[debug] [2018-03-26T17:46:50.992Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tablaperiodica-8af01  
+[debug] [2018-03-26T21:29:36.030Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-26T21:29:36.031Z] > authorizing via signed-in user
+[debug] [2018-03-26T21:29:36.033Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tablaperiodica-8af01  
   
- Mon Mar 26 2018 11:46:50 GMT-0600 (Hora estándar central (México))
-[debug] [2018-03-26T17:46:51.387Z] <<< HTTP RESPONSE 200
-[debug] [2018-03-26T17:46:51.387Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tablaperiodica-8af01/tokens  
+ Mon Mar 26 2018 15:29:36 GMT-0600 (CST)
+[debug] [2018-03-26T21:29:36.504Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-26T21:29:36.505Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tablaperiodica-8af01/tokens  
   
- Mon Mar 26 2018 11:46:51 GMT-0600 (Hora estándar central (México))
-[debug] [2018-03-26T17:46:51.856Z] <<< HTTP RESPONSE 200
-[debug] [2018-03-26T17:46:51.856Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tablaperiodica-8af01  
-  
- Mon Mar 26 2018 11:46:51 GMT-0600 (Hora estándar central (México))
-[debug] [2018-03-26T17:46:52.777Z] <<< HTTP RESPONSE 200
+ Mon Mar 26 2018 15:29:36 GMT-0600 (CST)
+[debug] [2018-03-26T21:29:36.907Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from 'C:\Users\ErickVO\Desktop\web\tabla'...
+[info] === Serving from '/Users/antmeng/Documents/GitHub/tabla'...
 [info] 
-[debug] [2018-03-26T17:46:52.808Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/376808640828/clients/_:getWebAppConfig  
+[debug] [2018-03-26T21:29:36.911Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tablaperiodica-8af01  
   
- Mon Mar 26 2018 11:46:52 GMT-0600 (Hora estándar central (México))
-[debug] [2018-03-26T17:46:53.953Z] <<< HTTP RESPONSE 200
+ Mon Mar 26 2018 15:29:36 GMT-0600 (CST)
+[debug] [2018-03-26T21:29:38.209Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-26T21:29:38.209Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/376808640828/clients/_:getWebAppConfig  
+  
+ Mon Mar 26 2018 15:29:38 GMT-0600 (CST)
+[debug] [2018-03-26T21:29:39.361Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
+[info] ✔  hosting: Local server: http://localhost:5000
 

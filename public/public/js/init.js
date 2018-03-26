@@ -17,7 +17,7 @@ function regElements(
 	energiaDeIonizacion, 
 	simboloQuimico,
 	nombre,
-	configuracionElectronica,
+	grupo,
 	electronegatividad,
 	estadosDeOxidacion,
 	tipoDeElemento
@@ -28,7 +28,7 @@ function regElements(
     energiaDeIonizacion: energiaDeIonizacion,
     simboloQuimico: simboloQuimico,
     nombre: nombre,
-    configuracionElectronica: configuracionElectronica,
+    grupo: grupo,
     electronegatividad: electronegatividad,
     estadosDeOxidacion: estadosDeOxidacion,
     tipoDeElemento:tipoDeElemento

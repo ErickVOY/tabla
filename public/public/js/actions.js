@@ -5,7 +5,7 @@ $( function () {
 		var energiaDeIonizacion = $('input[name="energiaDeIonizacion"]').val();
 		var simboloQuimico = $('input[name="SimboloQuimico"]').val();
 		var nombre = $('input[name="nombre"]').val();
-		var configuracionElectronica = $('input[name="configuracionElectronica"]').val();
+		var grupo = $('input[name="grupo"]').val();
 		var electronegatividad = $('input[name="electronegatividad"]').val();
 		var estadosDeOxidacion = $('input[name="estadosDeOxidacion"]').val();
 		var tipoDeElemento = $('input[name="TipoDeElemento"]').val();
@@ -16,7 +16,7 @@ $( function () {
 			energiaDeIonizacion, 
 			simboloQuimico,
 			nombre,
-			configuracionElectronica,
+			grupo,
 			electronegatividad,
 			estadosDeOxidacion,
 			tipoDeElemento
