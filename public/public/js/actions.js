@@ -1,7 +1,13 @@
 $( function () {
 
 	$('#openRegElements').on('click', function () {
-		$('#form').css('display','block');
+		if ('Registrar Elementos' == $(this).text()) {
+			$('#form').css('display','block');
+			$(this).text('Cerrar');
+		} else {
+			$('#form').css('display','none');
+			$(this).text('Registrar Elementos');
+		}
 	});
 
 	$('#regElement').on('click', function () {
