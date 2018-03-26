@@ -21,5 +21,7 @@ $( function () {
 			estadosDeOxidacion,
 			tipoDeElemento
 		);
+
+		alert("Registrado");
 	});
 });
