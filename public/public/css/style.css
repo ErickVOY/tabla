@@ -28,8 +28,21 @@ header {
 	background-attachment: fixed;
 }
 
-#form input[type="text"] {
+#form div {
 	width: 15%;
+	height: 30px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 3.5%;
+	border: solid 0px;
+	text-align: center;
+	background: url('../img/back2b.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#form input[type="text"] {
+	width: 100%;
 	height: 30px;
 	margin-top: 30px;
 	margin-left: 3.5%;
@@ -38,4 +51,9 @@ header {
 	background: url('../img/back2b.jpg');
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+#form button {
+	display: block;
+	margin: auto auto;
 }
