@@ -183,7 +183,6 @@ header button {
 	width: 1080px;
 	height: 455px;
 	margin: auto auto;
-	background: rgba(255, 255, 255, 0.2);
 }
 
 .column {
@@ -196,6 +195,14 @@ header button {
 	width: 60px;
 	height: 65px;
 	position: relative;
+	background: url('../img/back1b.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.etransparent {
+	background: transparent;
 }
 
 .simboloQuimico {
@@ -228,11 +235,21 @@ header button {
 }
 
 .numeroAtomico {
-	top: 1.5px;
+	top: 14px;
 	right: 4px;
 	overflow: hidden;
-	font-size: 12px;
-	font-weight: 300;
+	font-size: 14px;
+	font-weight: 400;
+	position: absolute;
+	color: rgb( 255, 255, 255);
+}
+
+.electronegatividad {
+	top: 5px;
+	right: 4px;
+	overflow: hidden;
+	font-size: 8px;
+	font-weight: 400;
 	position: absolute;
 	color: rgb( 255, 255, 255);
 }

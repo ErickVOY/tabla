@@ -48,12 +48,13 @@ for (var i = 1; i <= 118; i++) {
       snapshot.val().simboloQuimico,
       snapshot.val().nombre,
       snapshot.val().masaAtomica,
-      snapshot.val().numeroAtomico
+      snapshot.val().numeroAtomico,
+      snapshot.val().electronegatividad
     );
   });
 }
 
-function createElement (grupo, tipoDeElemento, simboloQuimico, nombre, masaAtomica, numeroAtomico) {
+function createElement (grupo, tipoDeElemento, simboloQuimico, nombre, masaAtomica, numeroAtomico, electronegatividad) {
     var element;
     switch (tipoDeElemento) {
       case 'No Metales': 
@@ -96,6 +97,7 @@ function createElement (grupo, tipoDeElemento, simboloQuimico, nombre, masaAtomi
         '<span class="nombre">' + nombre + '</span>' +
         '<span class="masaAtomica">' + masaAtomica + '</span>' +
         '<span class="numeroAtomico">' + numeroAtomico + '</span>' +
+        '<span class="electronegatividad">' + electronegatividad + '</span>' +
       '</div>'
     );
 }
