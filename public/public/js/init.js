@@ -92,12 +92,12 @@ function createElement (grupo, tipoDeElemento, simboloQuimico, nombre, masaAtomi
         break;
     }
     $( "#" + grupo ).append(
-      '<div class="element ' + element + '">' + 
+      '<button class="element ' + element + '">' + 
         '<span class="simboloQuimico">' + simboloQuimico + '</span>' +
         '<span class="nombre">' + nombre + '</span>' +
         '<span class="masaAtomica">' + masaAtomica + '</span>' +
         '<span class="numeroAtomico">' + numeroAtomico + '</span>' +
         '<span class="electronegatividad">' + electronegatividad + '</span>' +
-      '</div>'
+      '</button>'
     );
 }

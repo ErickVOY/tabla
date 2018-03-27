@@ -183,21 +183,28 @@ header button {
 	left: calc(50% - 540px);
 	top: calc(50% - 200px);
 	position: absolute;
-	width: 1080px;
+	width: 1170px;
 	height: 455px;
 	margin: auto auto;
+}
+
+#table * {
+	cursor: pointer;
 }
 
 .column {
 	width: 60px;
 	float: left;
 	height: 455px;
+	margin-right: 5px;
 }
 
 .element {
 	width: 60px;
 	height: 65px;
+	border: solid 0px;
 	position: relative;
+	margin: 0 0 !important;
 	background: url('../img/back1b.jpg');
 	background-size: cover;
 	background-attachment: fixed;
@@ -257,10 +264,22 @@ header button {
 	color: rgb( 255, 255, 255);
 }
 
-.nometales {
-	background: rgba(155, 89, 182,1.0) !important;
+.nometales:before {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	content: "";
+	position: absolute;
+	background: rgba(155, 89, 182,0.5) !important;
 }
 
-.metalesalcalinos {
-	background: rgba(230, 126, 34,1.0) !important;
+.metalesalcalinos:before {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	content: "";
+	position: absolute;
+	background: rgba(230, 126, 34,0.5) !important;
 }
