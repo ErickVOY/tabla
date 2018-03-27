@@ -178,3 +178,69 @@ header button {
 ::-ms-input-placeholder { 
 	color: rgb( 255, 255, 255);
 }
+
+#table {
+	width: 1080px;
+	height: 455px;
+	margin: auto auto;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.column {
+	width: 60px;
+	float: left;
+	height: 455px;
+}
+
+.element {
+	width: 60px;
+	height: 65px;
+	position: relative;
+}
+
+.simboloQuimico {
+	top: 20px;
+	left: 7px;
+	font-size: 28px;
+	font-weight: 300;
+	position: absolute;
+	color: rgb( 255, 255, 255);
+}
+
+.nombre {
+	top: 52px;
+	left: 7px;
+	font-size: 8px;
+	font-weight: 300;
+	position: absolute;
+	color: rgb( 255, 255, 255);
+}
+
+.masaAtomica {
+	top: 2px;
+	left: 7px;
+	width: 30px;
+	overflow: hidden;
+	font-size: 11px;
+	font-weight: 300;
+	position: absolute;
+	color: rgb( 255, 255, 255);
+}
+
+.numeroAtomico {
+	top: 1.5px;
+	right: 4px;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: 300;
+	position: absolute;
+	color: rgb( 255, 255, 255);
+}
+
+.nometales {
+	background: rgba(155, 89, 182,1.0) !important;
+}
+
+.metalesalcalinos {
+	background: rgba(230, 126, 34,1.0) !important;
+}

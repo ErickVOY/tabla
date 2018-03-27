@@ -11,6 +11,8 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
+var db = firebase.firestore();
+
 function regElements(
 	numeroAtomico, 
 	masaAtomica, 
@@ -33,4 +35,67 @@ function regElements(
     estadosDeOxidacion: estadosDeOxidacion,
     tipoDeElemento:tipoDeElemento
   });
+}
+
+var IA = ['1','3','11','19','37','55','87'];
+
+for (var i = 1; i <= 118; i++) {
+  var starCountRef = firebase.database().ref('elementos/' + i);
+  starCountRef.on('value', function(snapshot) {
+    createElement(
+      snapshot.val().grupo,
+      snapshot.val().tipoDeElemento,
+      snapshot.val().simboloQuimico,
+      snapshot.val().nombre,
+      snapshot.val().masaAtomica,
+      snapshot.val().numeroAtomico
+    );
+  });
+}
+
+function createElement (grupo, tipoDeElemento, simboloQuimico, nombre, masaAtomica, numeroAtomico) {
+    var element;
+    switch (tipoDeElemento) {
+      case 'No Metales': 
+        element = 'nometales';
+        break;
+      case 'Metales Alcalinos': 
+        element = 'metalesalcalinos';
+        break;
+      case 'Alcalinoterreos': 
+        element = 'alcalinoterreos';
+        break;
+      case 'Otros Metales': 
+        element = 'alcalinoterreos';
+        break;
+      case 'Metales De Transición': 
+        element = 'metalesdetrancision';
+        break;
+      case 'Metales De Transicion': 
+        element = 'metalesdetrancision';
+        break;
+      case 'Lantánidos': 
+        element = 'lantanidos';
+        break;
+      case 'Actínidos': 
+        element = 'actinidos';
+        break;
+      case 'Metaloides': 
+        element = 'metaloides';
+        break;
+      case 'Halógenos': 
+        element = 'halogenos';
+        break;
+      case 'Gases Nobles': 
+        element = 'gasesnobles';
+        break;
+    }
+    $( "#" + grupo ).append(
+      '<div class="element ' + element + '">' + 
+        '<span class="simboloQuimico">' + simboloQuimico + '</span>' +
+        '<span class="nombre">' + nombre + '</span>' +
+        '<span class="masaAtomica">' + masaAtomica + '</span>' +
+        '<span class="numeroAtomico">' + numeroAtomico + '</span>' +
+      '</div>'
+    );
 }
