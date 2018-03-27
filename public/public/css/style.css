@@ -180,6 +180,9 @@ header button {
 }
 
 #table {
+	left: calc(50% - 540px);
+	top: calc(50% - 200px);
+	position: absolute;
 	width: 1080px;
 	height: 455px;
 	margin: auto auto;
