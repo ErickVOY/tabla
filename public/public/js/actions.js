@@ -4,9 +4,11 @@ $( function () {
 		if ('Registrar Elementos' == $(this).text()) {
 			$('#form').css('display','block');
 			$(this).text('Cerrar');
+			$('#table').css('display','none');
 		} else {
 			$('#form').css('display','none');
 			$(this).text('Registrar Elementos');
+			$('#table').css('display','block');
 		}
 	});
 
