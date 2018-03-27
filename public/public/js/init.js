@@ -70,10 +70,10 @@ function createElement (grupo, tipoDeElemento, simboloQuimico, nombre, masaAtomi
         element = 'alcalinoterreos';
         break;
       case 'Metales De Transición': 
-        element = 'metalesdetrancision';
+        element = 'metalesdetransicion';
         break;
       case 'Metales De Transicion': 
-        element = 'metalesdetrancision';
+        element = 'metalesdetransicion';
         break;
       case 'Lantánidos': 
         element = 'lantanidos';
